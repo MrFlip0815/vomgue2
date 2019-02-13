@@ -4,10 +4,16 @@ header.masthead {
   h1 {
     font-size: 3rem;
     line-height: 3rem;
+    @include vomgue-font;
   }
   h2 {
     font-size: 1.3rem;
-    @include body-font;
+    line-height: 6rem;
+    @include vomgue-font;
+  }
+  h3 {
+    font-size: 1.3rem;
+    @include heading-font;
   }
 }
 @media (min-width: 992px) {

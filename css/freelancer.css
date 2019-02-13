@@ -9,7 +9,7 @@ body {
 }
 
 h1,
-h2,
+h2
 h3,
 h4,
 h5,
@@ -180,11 +180,19 @@ header.masthead {
 header.masthead h1 {
   font-size: 3rem;
   line-height: 3rem;
+  font-family: 'Pacifico';
 }
 
 header.masthead h2 {
   font-size: 1.3rem;
-  font-family: 'Lato';
+  line-height: 6rem;
+  font-family: 'Pacifico';
+}
+
+header.masthead h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Montserrat';
 }
 
 @media (min-width: 992px) {
