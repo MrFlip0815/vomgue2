@@ -72,6 +72,7 @@ section {
 section h2 {
   font-size: 2.25rem;
   line-height: 2rem;
+  font-family: 'Pacifico';
 }
 
 @media (min-width: 992px) {
@@ -217,10 +218,6 @@ header.masthead h3 {
   margin-bottom: -15px;
 }
 
-.portfolio h2 {
-  font-family: 'Pacifico';
-}
-
 .portfolio .portfolio-item {
   position: relative;
   display: block;
@@ -263,6 +260,7 @@ header.masthead h3 {
 }
 
 .portfolio-modal .portfolio-modal-dialog .close-button {
+  z-index: 3;
   position: absolute;
   top: 2rem;
   right: 2rem;

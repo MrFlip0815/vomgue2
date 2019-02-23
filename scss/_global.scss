@@ -60,6 +60,7 @@ section {
   h2 {
     font-size: 2.25rem;
     line-height: 2rem;
+    @include vomgue-font;
   }
   @media (min-width: 992px) {
     h2 {
