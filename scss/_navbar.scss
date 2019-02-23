@@ -5,6 +5,7 @@
   @include heading-font;
   .navbar-brand {
     color: $white;
+    @include vomgue-font;
   }
   .navbar-nav {
     margin-top: 1rem;

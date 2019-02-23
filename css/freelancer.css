@@ -108,6 +108,13 @@ section h2 {
   line-height: 3.1rem;
 }
 
+div.mfp-wrap {
+  overflow: hidden auto !important;
+  height: 100% !important;
+  position: fixed !important;
+  top: 0 !important;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -117,6 +124,7 @@ section h2 {
 
 #mainNav .navbar-brand {
   color: #fff;
+  font-family: 'Pacifico';
 }
 
 #mainNav .navbar-nav {
@@ -395,4 +403,10 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #4c8226;
   border-color: #4c8226;
+}
+
+.freezePage {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
 }

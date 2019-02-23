@@ -49,3 +49,9 @@ a {
     border-color: darken($secondary, 10%);
   }
 }
+
+.freezePage {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
