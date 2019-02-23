@@ -1,5 +1,10 @@
 // Styling for the portfolio section
 .portfolio {
+
+  h2 {
+    @include vomgue-font;  
+  }
+
   margin-bottom: -15px;
   .portfolio-item {
     position: relative;
