@@ -67,7 +67,9 @@
         <br>
         <br>
         <img class="img-fluid mb-5  mx-auto" alt="" id="vomGueImage1" src="img/gue.png">
-        <img class="img-fluid mb-5  mx-auto" alt="" id="vomGueImage2" src="img/profile.png" style="display:none;">
+        <img class="img-fluid mb-5  mx-auto" alt="" id="vomGueImage2" src="img/Shiitake3.png" style="display:none;">
+        <img class="img-fluid mb-5  mx-auto" alt="" id="vomGueImage3" src="img/AusternVomGue1.png" style="display:none;">
+        <img class="img-fluid mb-5  mx-auto" alt="" id="vomGueImage4" src="img/Kraeuter5.png" style="display:none;">
         </div>
         <h2 class="font-weight-light mb-0">"More mushrooms, more health, less calories"</h3>
       </div>
@@ -340,7 +342,6 @@
 
               <p class="mb-5">
                   Der Shiitake ist ein besonders delikater Speisepilz mit einem sehr aromatischem, leicht knoblauchartigen Geschmack. In Ostasien wird er auch "König der Pilze" genannt.
-
               </p>
 
               <p class="mb-5">
@@ -535,21 +536,21 @@
         setInterval(switchImage, 15000); // change main image every x seconds
       });
 
-      function switchImage() {
-        if (randomGue() === 1) {
-          $("#vomGueImage2").fadeOut("slow", function() {
-            $("#vomGueImage1").fadeIn("slow");  
-          })
-          
-        } else {
-          $("#vomGueImage1").fadeOut("slow", function() {
-            $("#vomGueImage2").fadeIn("slow");  
-          })
-        }
-      }
+      var startImage = $("#vomGueImage1");
 
-      function randomGue() {
-        return getRandomInt(1,3);
+      function switchImage() {
+        $(startImage).fadeOut("slow", function() {
+          var imageList = $("[id^=vomGueImage]");
+          var randomNumber = getRandomInt(0, (imageList.length - 1));
+          var picked = imageList[randomNumber];
+          while(picked == startImage) { // we don't want the same pic twice
+            randomNumber = getRandomInt(0, (imageList.length - 1));
+            picked = imageList[randomNumber];
+          }
+          $(picked).fadeIn("slow", function() {
+            startImage = picked;
+          });
+        });
       }
 
       function getRandomInt(min, max) {

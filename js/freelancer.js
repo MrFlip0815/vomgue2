@@ -55,36 +55,6 @@
     preloader: false,
     focus: '#username',
     modal: true,
-    // callbacks: {
-    //   open: function(e) {
-    //     previousScrollyY = window.scrollY;
-    //     $("html").addClass("modal-open").css({
-    //       marginTop: -previousScrollyY,
-    //       overflow: "hidden",
-    //       left: 0,
-    //       right: 0,
-    //       top: 0,
-    //       bottom: 0,
-    //       position: "fixed",
-    //     });
-    //   },
-    //   close: function(e) {
-    //     $("html").removeClass("modal-open").css({
-    //       marginTop: 0,
-    //       overflow: "visible",
-    //       left: 'auto',
-    //       right: 'auto',
-    //       top: 'auto',
-    //       bottom: 'auto',
-    //       position: 'static',
-    //     });
-    //     window.scrollTo(0, previousScrollyY);
-
-
-    //     $("html").removeClass("freezePage");
-    //     $("body").removeClass("freezePage");
-    //   }
-    // }
   });
   
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {

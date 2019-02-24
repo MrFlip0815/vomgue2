@@ -54,7 +54,7 @@ $(function() {
         complete: function() {
           setTimeout(function() {
             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
-          }, 1000);
+          }, 2000);
         }
       });
     },

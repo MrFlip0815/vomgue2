@@ -8,7 +8,7 @@ header.masthead {
   }
   h2 {
     font-size: 1.3rem;
-    line-height: 6rem;
+    line-height: 3rem;
     @include vomgue-font;
   }
   h3 {
@@ -25,7 +25,8 @@ header.masthead {
       line-height: 4rem;
     }
     h2 {
-      font-size: 1.75em;
+      font-size: 1.75em;  
+      line-height: 6rem;    
     }
 
   }

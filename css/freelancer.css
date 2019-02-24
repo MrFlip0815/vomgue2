@@ -198,7 +198,7 @@ header.masthead h1 {
 
 header.masthead h2 {
   font-size: 1.3rem;
-  line-height: 6rem;
+  line-height: 3rem;
   font-family: 'Pacifico';
 }
 
@@ -219,6 +219,7 @@ header.masthead h3 {
   }
   header.masthead h2 {
     font-size: 1.75em;
+    line-height: 6rem;
   }
 }
 
