@@ -115,6 +115,21 @@ div.mfp-wrap {
   top: 0 !important;
 }
 
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
