@@ -98,12 +98,14 @@ section {
   }
 }
 
-div.mfp-wrap {
+.mfp-wrap {
     overflow: hidden auto !important;
     height: 100% !important;
-    position: fixed !important;
+    // position: fixed !important;
     top: 0 !important;
 }
+
+
 
 .google-maps {
   position: relative;
