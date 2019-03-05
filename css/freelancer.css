@@ -129,6 +129,10 @@ section h2 {
   height: 100% !important;
 }
 
+.no-padding {
+  padding-left: 0px !important;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
