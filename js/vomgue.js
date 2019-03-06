@@ -55,6 +55,11 @@
     preloader: false,
     focus: '#username',
     modal: true,
+    callbacks: {
+      open: function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow"); // ios hack
+      },
+    }
   });
   
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {

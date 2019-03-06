@@ -11,7 +11,7 @@ $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
 // Create the email and send the message
-$to = "simark@gmx.at"; // Add your email address inbetween the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = "office@vomgue.at"; // Add your email address inbetween the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
 $subject = "Nachricht von vomgue.bplaced.net von: $name";
 $body = "Du hast eine Nachricht von deiner Website 'vomgue' erhalten.\n\n"."Hier sind die Details:\n\nName: $name\n\nEmail: $email\n\nTelefonnummer: $phone\n\nNachricht:\n$message";
 $header = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
