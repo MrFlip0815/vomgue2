@@ -57,7 +57,8 @@
     modal: true,
     callbacks: {
       open: function() {
-        $("html, body").animate({ scrollTop: 0 }, "slow"); // ios hack
+        // uncomment this if we want to use a hack
+        // $("html, body").animate({ scrollTop: 0 }, "slow"); // ios hack
       },
     }
   });
